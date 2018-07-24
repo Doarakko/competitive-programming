@@ -1,29 +1,32 @@
 #include <iostream>
+#include <string>
 #include <vector>
+#include <map>
 #include <algorithm>
+#include <cmath>
+
+#define F first
+#define S second
+#define vsort(v) sort((v).begin(), (v).end())
+#define vrev(v) reverse((v).begin(), (v).end())
+
 using namespace std;
 using ll = long long;
 
 int main(int argc, const char * argv[]) {
-    int N;
-    cin >> N;
-    vector<int> v(N);
-    int x;
-    for (int i = 0; i < N; i++) {
+    int n, x;
+    cin >> n;
+    vector<int> v(n);
+    for (int i = 0; i < n; i++) {
         cin >> x;
         v[i] = x;
     }
-    sort(v.begin(), v.end());
-    int cnt = 0, pre = -1;
-    for (int i = 0; i < N; i++) {
-        if (pre == -1) {
+    vsort(v);
+    int cnt = 1;
+    for (int i = 1; i < n; i++) {
+        if (v[i] > v[i-1]) {
             cnt++;
-        }else{
-            if (v[i] > pre) {
-                cnt++;
-            }
         }
-        pre = v[i];
     }
     cout << cnt << endl;
     return 0;
