@@ -1,11 +1,11 @@
 # Competitive-Programming<br>
-##・ant-book
+## ・ant-book
 ### - プログラミングコンテストチャレンジブック
-##・AOJ
+## ・AOJ
 http://judge.u-aizu.ac.jp/onlinejudge/
-##・AtCoder
+## ・AtCoder
 ### - http://www.atcoder.jp/
-##・ICPC
+## ・ICPC
 ### - http://icpc.iisf.or.jp/
-##・JOI
+## ・JOI
 ### - https://www.ioi-jp.org/
