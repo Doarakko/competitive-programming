@@ -16,10 +16,18 @@ using ll = long long;
 int main(int argc, const char * argv[]) {
     int a, b, c;
     cin >> a >> b >> c;
-    if (a % 2 == 0 && c % 2 == 1) {
-        cout << "NO" << endl;
-    }else{
+    bool flag = false;
+    for (int i = 0; i < b; i++) {
+        if (a * (i + 1) % b == c) {
+            flag = true;
+            break;
+        }
+    }
+    
+    if (flag) {
         cout << "YES" << endl;
+    }else{
+        cout << "NO" << endl;
     }
     
     return 0;
