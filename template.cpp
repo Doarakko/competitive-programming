@@ -6,8 +6,8 @@
 #include <cmath>
 #include <climits>
 
-#define F first
-#define S second
+#define X first
+#define Y second
 #define vsort(v) sort((v).begin(), (v).end())
 #define vrev(v) reverse((v).begin(), (v).end())
 
