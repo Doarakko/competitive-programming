@@ -22,6 +22,10 @@
 //LDBL_MIN
 //LDBL_MAX
 
+// A-Z: 65~90
+// a-z: 97~122
+// |a-z| = 26
+
 using namespace std;
 using ll = long long;
 
