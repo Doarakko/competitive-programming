@@ -12,7 +12,6 @@
 #define vsort(v) sort((v).begin(), (v).end())
 #define vrev(v) reverse((v).begin(), (v).end())
 
-
 // INT_MAX
 // INT_MIN
 // LLONG_MAX
@@ -29,6 +28,6 @@
 using namespace std;
 using ll = long long;
 
-int main(int argc, const char * argv[]) {
+int main(int argc, const char *argv[]){
 
 }
