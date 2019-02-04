@@ -1,12 +1,19 @@
 #include <iostream>
 using namespace std;
+using ll = long long;
 int main(int argc, const char * argv[]) {
-    long long int N, M;
-    cin >> N >> M;
-
-    long long int cnt = 0;
-    cnt = N * M / 2;
-
-    cout << cnt << endl;
-    return 0;
+    ll n, m;
+    cin >> n >> m;
+    ll ans = 0;
+    
+    if (n == 1 && m == 1) {
+        ans = 1;
+    }else if(n == 1){
+        ans = m - 2;
+    }else if(m == 1){
+        ans = n - 2;
+    }else{
+        ans = (n - 2) * (m - 2);
+    }
+    cout << ans << endl;
 }
