@@ -14,37 +14,20 @@
 #define vrev(v) reverse(v.begin(), v.end())
 #define P pair
 using namespace std;
-int main(int argc, const char * argv[]) {
+int main(int argc, const char *argv[])
+{
     int a, b;
     cin >> a >> b;
-    
+
     int ans;
-    
-    // 赤
-    for (int i = 0; ; i++) {
-        if (a + i == 9) {
-            a = -1;
-        }
-        if (a + i == b) {
-            ans = i;
-            break;
-        }
+    ans = abs(b - a);
+    if (b > a)
+    {
+        ans = min(ans, a + abs(b - 9) + 1);
     }
-    
-    // 青
-    for (int i = 0; ; i++) {
-        if (a + i == 0) {
-            a = 10;
-        }
-        if (a - i == b) {
-            ans = min(ans, i);
-            break;
-        }
+    else
+    {
+        ans = min(ans, abs(a - 9) + 1 + b);
     }
     cout << ans << endl;
-    
-    
-    int n;
-    cin >> n;
-    cout << 2010 + n * 4 << endl;
 }
