@@ -1,55 +1,43 @@
 #include <iostream>
-#include <string>
-#include <vector>
-#include <map>
-#include <set>
-#include <algorithm>
-#include <cmath>
-#include <climits>
-
-#define X first
-#define Y second
-#define vsort(v) sort((v).begin(), (v).end())
-#define vrev(v) reverse((v).begin(), (v).end())
-
-
-//INT_MAX
-//INT_MIN
-//LLONG_MAX
-//LLONG_MIN
-//DBL_MIN
-//DBL_MAX
-//LDBL_MIN
-//LDBL_MAX
-
-// A-Z: 65~90
-// a-z: 97~122
-// |a-z| = 26
-
 using namespace std;
-using ll = long long;
-
-int main(int argc, const char * argv[]) {
+int main(int argc, const char *argv[])
+{
     string s;
-    int t;
+    int t, x = 0, y = 0, z = 0;
     cin >> s >> t;
-    int x = 0, y = 0, cnt = 0;
-    for (int i = 0; i < s.length(); i++) {
-        if (s[i] == 'L') {
+    for (int i = 0; i < s.length(); i++)
+    {
+        switch (s[i])
+        {
+        case 'L':
             x--;
-        }else if(s[i] == 'R'){
+            break;
+        case 'R':
             x++;
-        }else if (s[i] == 'U'){
+            break;
+        case 'U':
             y++;
-        }else if(s[i] == 'D'){
+            break;
+        case 'D':
             y--;
-        }else{
-            cnt++;
+            break;
+        case '?':
+            z++;
+            break;
         }
     }
-    if (t == 1) {
-        cout << max(max(abs(x-cnt)+abs(y), abs(x+cnt)+abs(y)), max(abs(x)+abs(y-cnt), abs(x)+abs(y+cnt))) << endl;
-    }else{
-        cout << min(min(abs(x-cnt)+abs(y), abs(x+cnt)+abs(y)), min(abs(x)+abs(y-cnt), abs(x)+abs(y+cnt))) << endl;
+    int ans;
+    if (t == 1)
+    {
+        ans = abs(x) + abs(y) + z;
     }
+    else
+    {
+        ans = abs(x) + abs(y) - z;
+        if (ans < 0)
+        {
+            ans = abs(ans) % 2;
+        }
+    }
+    cout << ans << endl;
 }
