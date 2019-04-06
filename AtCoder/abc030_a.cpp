@@ -1,13 +1,19 @@
 #include <iostream>
 using namespace std;
-int main(int argc, const char * argv[]) {
+int main(int argc, const char *argv[])
+{
     double a, b, c, d;
     cin >> a >> b >> c >> d;
-    if (b / a > d / c) {
+    if (b / a > d / c)
+    {
         cout << "TAKAHASHI" << endl;
-    }else if(b / a < d / c){
+    }
+    else if (b / a < d / c)
+    {
         cout << "AOKI" << endl;
-    }else{
+    }
+    else
+    {
         cout << "DRAW" << endl;
     }
 }
