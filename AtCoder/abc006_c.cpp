@@ -45,22 +45,27 @@ int main(int argc, const char *argv[])
         return 0;
     }
 
-    // 老人2 = 大人1 + 赤ちゃん1
-    // 老人 = 0 or 1
-    for (int i = 0; i <= 1; i++)
+    int a, b, c;
+    for (int a = 0; a <= n; a++)
     {
 
-        for (int j = 0; j <= n - i; j++)
+        // m = 2a + 3b + 4c
+        // a + b + c = n
+        // b = n - (a + c)
+        // m = 2a + 3(n-(a+c)) + 4c
+        // m = 2a + 3n - 3a -3c + 4c
+        // c = m + a - 3n
+        // b = n - a - c
+        // b = n - a - (m + a - 3n)
+        // b = 4n - 2a -m
+        b = 4 * n - 2 * a - m;
+        c = m + a - 3 * n;
+        if (a >= 0 && c >= 0)
         {
-            int sum = j * 2 + i * 3 + (n - (i + j)) * 4;
-            if (sum == m)
-            {
-                // 大人: j, 老人: i, 赤ちゃん: n - (i + j)
-                cout << j << ' ' << i << ' ' << n - (i + j) << endl;
-                return 0;
-            }
-            // cout << j << ' ' << i << ' ' << cnt - j << endl;
+            cout << a << ' ' << b << ' ' << c << endl;
+            return 0;
         }
+        // cout << a << ' ' << b << ' ' << c << endl;
     }
     cout << "-1 -1 -1" << endl;
 }
