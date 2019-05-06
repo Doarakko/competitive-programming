@@ -29,6 +29,7 @@ int main(int argc, const char *argv[])
             {
                 cnt++;
                 idx = j + 1;
+                break;
             }
             else if (x[i] < y[j])
             {
