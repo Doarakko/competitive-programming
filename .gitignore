@@ -39,3 +39,6 @@ AtCoder/arc*/
 AtCoder/agc*/
 garbage
 .vscode/
+
+# V
+*_*.tmp.c
