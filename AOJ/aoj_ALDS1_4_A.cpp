@@ -14,7 +14,7 @@ int linearSearch(vector<int> v, int key)
     {
         i++;
     }
-    if (i >= v.size())
+    if (i == v.size() - 1)
     {
         return -1;
     }
