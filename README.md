@@ -2,7 +2,7 @@
 
 ## Reference
 
-- [AOJ](http://judge.u-aizu.ac.jp/onlinejudge/)
+- [AOJ](https://onlinejudge.u-aizu.ac.jp/home)
 - [AtCoder](http://www.atcoder.jp/)
 - [Google Code Jam](https://codingcompetitions.withgoogle.com/codejam)
 - [ICPC](http://icpc.iisf.or.jp/)
