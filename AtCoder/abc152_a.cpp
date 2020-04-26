@@ -4,14 +4,30 @@ using namespace std;
 
 int main(int argc, const char *argv[])
 {
-    int n, m;
-    cin >> n >> m;
-    if (n == m)
+    string a, b;
+    cin >> a >> b;
+
+    int x, y;
+    x = stoi(a);
+    y = stoi(b);
+
+    string s, t;
+    for (int i = 0; i < y; i++)
     {
-        cout << "Yes" << endl;
+        s += a;
+    }
+
+    for (int i = 0; i < x; i++)
+    {
+        t += b;
+    }
+
+    if (s <= t)
+    {
+        cout << s << endl;
     }
     else
     {
-        cout << "No" << endl;
+        cout << t << endl;
     }
 }
