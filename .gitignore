@@ -42,3 +42,6 @@ garbage
 
 # V
 *_*.tmp.c
+
+# Rust
+main
