@@ -1,6 +1,6 @@
 # Competitive programming
 
-## Reference
+## References
 
 - [AOJ](https://onlinejudge.u-aizu.ac.jp/home)
 - [AtCoder](http://www.atcoder.jp/)
