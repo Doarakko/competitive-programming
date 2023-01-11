@@ -1,9 +1,4 @@
 #include <iostream>
-#include <string>
-#include <vector>
-#include <map>
-#include <algorithm>
-#include <cmath>
 
 #define F first
 #define S second
@@ -13,15 +8,20 @@
 using namespace std;
 using ll = long long;
 
-int main(int argc, const char * argv[]) {
+int main(int argc, const char *argv[])
+{
     int n, k;
     cin >> n >> k;
     int x, sum = 0;
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++)
+    {
         cin >> x;
-        if (x > k - x) {
+        if (x > k - x)
+        {
             sum += 2 * (k - x);
-        }else{
+        }
+        else
+        {
             sum += 2 * x;
         }
     }

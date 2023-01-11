@@ -1,9 +1,4 @@
 #include <iostream>
-#include <string>
-#include <vector>
-#include <map>
-#include <algorithm>
-#include <cmath>
 
 #define F first
 #define S second
@@ -13,22 +8,28 @@
 using namespace std;
 using ll = long long;
 
-int main(int argc, const char * argv[]) {
+int main(int argc, const char *argv[])
+{
     int a, b, c;
     cin >> a >> b >> c;
     bool flag = false;
-    for (int i = 0; i < b; i++) {
-        if (a * (i + 1) % b == c) {
+    for (int i = 0; i < b; i++)
+    {
+        if (a * (i + 1) % b == c)
+        {
             flag = true;
             break;
         }
     }
-    
-    if (flag) {
+
+    if (flag)
+    {
         cout << "YES" << endl;
-    }else{
+    }
+    else
+    {
         cout << "NO" << endl;
     }
-    
+
     return 0;
 }

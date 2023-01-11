@@ -1,9 +1,4 @@
 #include <iostream>
-#include <string>
-#include <vector>
-#include <map>
-#include <algorithm>
-#include <cmath>
 
 #define F first
 #define S second
@@ -15,21 +10,27 @@ using ll = long long;
 
 // a: 49
 
-int main(int argc, const char * argv[]) {
+int main(int argc, const char *argv[])
+{
     string s;
     cin >> s;
     int a[26] = {};
     bool flag = true;
-    for (int i = 0; i < s.length(); i++) {
-        a[s[i]-'0'-49]++;
-        if (a[s[i]-'0'-49] >= 2) {
+    for (int i = 0; i < s.length(); i++)
+    {
+        a[s[i] - '0' - 49]++;
+        if (a[s[i] - '0' - 49] >= 2)
+        {
             flag = false;
             break;
         }
     }
-    if (flag) {
+    if (flag)
+    {
         cout << "yes" << endl;
-    }else{
+    }
+    else
+    {
         cout << "no" << endl;
     }
 }

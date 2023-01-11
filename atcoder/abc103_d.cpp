@@ -1,9 +1,4 @@
 #include <iostream>
-#include <string>
-#include <vector>
-#include <map>
-#include <algorithm>
-#include <cmath>
 
 #define F first
 #define S second
@@ -13,20 +8,24 @@
 using namespace std;
 using ll = long long;
 
-int main(int argc, const char * argv[]) {
+int main(int argc, const char *argv[])
+{
     int n, m;
     cin >> n >> m;
     pair<int, int> p;
     vector<pair<int, int>> v(m);
-    for (int i = 0; i < m; i++) {
+    for (int i = 0; i < m; i++)
+    {
         cin >> p.S >> p.F;
         v[i] = p;
     }
     vsort(v);
-    
+
     int cnt = 1, tmp = v[0].first;
-    for (int i = 0; i < m; i++) {
-        if (v[i].second >= tmp) {
+    for (int i = 0; i < m; i++)
+    {
+        if (v[i].second >= tmp)
+        {
             cnt++;
             tmp = v[i].first;
         }

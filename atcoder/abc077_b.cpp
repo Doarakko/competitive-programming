@@ -1,13 +1,11 @@
 #include <iostream>
-#include <string>
-#include <vector>
-#include <map>
-#include <algorithm>
-#include <cmath>
+#include <math.h>
+
 using namespace std;
 using ll = long long;
 
-int main(int argc, const char * argv[]) {
+int main(int argc, const char *argv[])
+{
     ll n;
     cin >> n;
     cout << (int)sqrt(n) * (int)sqrt(n) << endl;

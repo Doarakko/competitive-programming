@@ -1,30 +1,10 @@
 #include <iostream>
-#include <string>
-#include <vector>
-#include <map>
-#include <algorithm>
-#include <cmath>
-#include <climits>
-
-#define X first
-#define Y second
-#define vsort(v) sort((v).begin(), (v).end())
-#define vrev(v) reverse((v).begin(), (v).end())
-
-
-//INT_MAX
-//INT_MIN
-//LLONG_MAX
-//LLONG_MIN
-//DBL_MIN
-//DBL_MAX
-//LDBL_MIN
-//LDBL_MAX
 
 using namespace std;
 using ll = long long;
 
-int main(int argc, const char * argv[]) {
+int main(int argc, const char *argv[])
+{
     int x1, x2, y1, y2;
     cin >> x1 >> y1 >> x2 >> y2;
     int x3, x4, y3, y4;
@@ -34,5 +14,5 @@ int main(int argc, const char * argv[]) {
     y3 = y2 + dx;
     x4 = x3 - dx;
     y4 = y3 - dy;
-    cout << x3 << ' ' << y3  << ' ' << x4  << ' ' << y4 << ' '  << endl;
+    cout << x3 << ' ' << y3 << ' ' << x4 << ' ' << y4 << ' ' << endl;
 }

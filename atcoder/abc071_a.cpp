@@ -1,9 +1,4 @@
 #include <iostream>
-#include <string>
-#include <vector>
-#include <map>
-#include <algorithm>
-#include <cmath>
 
 #define F first
 #define S second
@@ -13,12 +8,16 @@
 using namespace std;
 using ll = long long;
 
-int main(int argc, const char * argv[]) {
+int main(int argc, const char *argv[])
+{
     int x, a, b;
     cin >> x >> a >> b;
-    if (abs(x - a) > abs(x - b)) {
+    if (abs(x - a) > abs(x - b))
+    {
         cout << 'B' << endl;
-    }else{
+    }
+    else
+    {
         cout << 'A' << endl;
     }
     return 0;

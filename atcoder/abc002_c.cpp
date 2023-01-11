@@ -1,6 +1,6 @@
 #include <iostream>
-#include <vector>
 #include <math.h>
+
 using namespace std;
 int main(int argc, const char *argv[])
 {
@@ -16,6 +16,6 @@ int main(int argc, const char *argv[])
     c = sqrt((x[1] - x[2]) * (x[1] - x[2]) + (y[1] - y[2]) * (y[1] - y[2]));
     s = (a + b + c) / 2;
     S = sqrt(s * (s - a) * (s - b) * (s - c));
-    //cout << "a: " << a << " b: " << b << " c: " << c << " s: " << s << endl;
+    // cout << "a: " << a << " b: " << b << " c: " << c << " s: " << s << endl;
     printf("%.1f", S);
 }

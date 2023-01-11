@@ -1,6 +1,8 @@
 #include <iostream>
+#include <iostream>
 #include <vector>
 #include <set>
+
 using namespace std;
 int main()
 {
@@ -8,7 +10,7 @@ int main()
     cin >> n >> m;
 
     int a, b;
-    vector<pair<int, int> > x(m);
+    vector<pair<int, int>> x(m);
     for (int i = 0; i < m; i++)
     {
         cin >> a >> b;
@@ -20,7 +22,7 @@ int main()
     cin >> k;
 
     int c, d;
-    vector<pair<int, int> > y(k);
+    vector<pair<int, int>> y(k);
     for (int i = 0; i < k; i++)
     {
         cin >> c >> d;

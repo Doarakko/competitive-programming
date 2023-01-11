@@ -1,33 +1,40 @@
 #include <iostream>
-#include <vector>
-#include <algorithm>
-#include <string>
+
 using namespace std;
 using ll = long long;
 
-int main(int argc, const char * argv[]) {
+int main(int argc, const char *argv[])
+{
     int d, n;
     cin >> d >> n;
     int ans;
-    
-    if (d == 2) {
+
+    if (d == 2)
+    {
         ans = 100 * 100;
         ans = ans * n;
-        if (n == 100) {
+        if (n == 100)
+        {
             ans += 100 * 100;
         }
-    }else if(d == 1){
+    }
+    else if (d == 1)
+    {
         ans = 100;
         ans *= n;
-        if (n == 100) {
+        if (n == 100)
+        {
             ans += 100;
         }
-    }else{
+    }
+    else
+    {
         ans = n;
-        if (n == 100) {
+        if (n == 100)
+        {
             ans++;
         }
     }
-        cout << ans << endl;
+    cout << ans << endl;
     return 0;
 }

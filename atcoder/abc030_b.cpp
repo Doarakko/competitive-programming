@@ -1,13 +1,5 @@
 #include <iostream>
-#include <string>
-#include <vector>
-#include <map>
-#include <set>
-#include <algorithm>
-#include <cmath>
-#include <climits>
-#include <math.h>
-#include <bitset>
+
 using namespace std;
 int main(int argc, const char *argv[])
 {

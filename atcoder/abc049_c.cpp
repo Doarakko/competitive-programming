@@ -1,46 +1,66 @@
 #include <iostream>
-#include <string>
-#include <algorithm>
+
 using namespace std;
 
-int main(int argc, const char * argv[]) {
+int main(int argc, const char *argv[])
+{
     string s;
     cin >> s;
-    
+
     bool flag = true;
     reverse(s.begin(), s.end());
-    for (int i = 0; i < s.length() && flag; i++) {
-        if (s[i] == 'm') {
-            if (s.substr(i, 5) == "maerd") {
+    for (int i = 0; i < s.length() && flag; i++)
+    {
+        if (s[i] == 'm')
+        {
+            if (s.substr(i, 5) == "maerd")
+            {
                 i = i + 4;
-            }else{
-                flag = false;
-                
             }
-        }else if(s[i] == 'r'){
-            if (s.substr(i, 7) == "remaerd") {
+            else
+            {
+                flag = false;
+            }
+        }
+        else if (s[i] == 'r')
+        {
+            if (s.substr(i, 7) == "remaerd")
+            {
                 i = i + 6;
-            }else if(s.substr(i, 6) == "resare"){
+            }
+            else if (s.substr(i, 6) == "resare")
+            {
                 i = i + 5;
-            }else{
+            }
+            else
+            {
                 flag = false;
             }
-        }else if(s[i] == 'e'){
-            if (s.substr(i, 5) == "esare") {
+        }
+        else if (s[i] == 'e')
+        {
+            if (s.substr(i, 5) == "esare")
+            {
                 i = i + 4;
-            }else{
+            }
+            else
+            {
                 cout << i << endl;
                 flag = false;
             }
-        }else{
+        }
+        else
+        {
             flag = false;
-            
         }
     }
-    
-    if (flag) {
+
+    if (flag)
+    {
         cout << "YES" << endl;
-    }else{
+    }
+    else
+    {
         cout << "NO" << endl;
     }
     return 0;

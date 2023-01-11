@@ -1,16 +1,4 @@
 #include <iostream>
-#include <iomanip>
-#include <string>
-#include <vector>
-#include <map>
-#include <set>
-#include <stack>
-#include <queue>
-#include <algorithm>
-#include <cmath>
-#include <climits>
-#include <math.h>
-#include <bitset>
 
 using namespace std;
 int main(int argc, const char *argv[])

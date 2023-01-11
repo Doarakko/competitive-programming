@@ -1,14 +1,4 @@
 #include <iostream>
-#include <iomanip>
-#include <string>
-#include <vector>
-#include <map>
-#include <set>
-#include <algorithm>
-#include <cmath>
-#include <climits>
-#include <math.h>
-#include <bitset>
 
 using namespace std;
 using ll = long long;
@@ -27,7 +17,7 @@ int main(int argc, const char *argv[])
             if (max(a, b) < ans)
             {
                 ans = max(a, b);
-                //cout << i << " " << n / i << " " << ans << endl;
+                // cout << i << " " << n / i << " " << ans << endl;
             }
         }
     }

@@ -1,30 +1,34 @@
 #include <iostream>
-#include <string>
-#include <vector>
-#include <map>
-#include <algorithm>
-#include <cmath>
+
 using namespace std;
 using ll = long long;
 
-int main(int argc, const char * argv[]) {
+int main(int argc, const char *argv[])
+{
     int n, m, x;
     cin >> n >> m >> x;
-    
+
     int tmp, l = 0, r = 0;
-    for (int i = 0; i < m; i++) {
+    for (int i = 0; i < m; i++)
+    {
         cin >> tmp;
-        if (tmp < x) {
+        if (tmp < x)
+        {
             l++;
-        }else{
+        }
+        else
+        {
             r++;
         }
     }
-    if (l < r) {
+    if (l < r)
+    {
         cout << l << endl;
-    }else{
+    }
+    else
+    {
         cout << r << endl;
     }
-    
+
     return 0;
 }

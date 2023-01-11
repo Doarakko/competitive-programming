@@ -1,16 +1,15 @@
 #include <iostream>
-#include <string>
 #include <vector>
-#include <map>
-#include <algorithm>
-#include <cmath>
+
 using namespace std;
 using ll = long long;
 
-int main(int argc, const char * argv[]) {
+int main(int argc, const char *argv[])
+{
     vector<int> v(3);
     int x;
-    for (int i = 0; i < 3; i++) {
+    for (int i = 0; i < 3; i++)
+    {
         cin >> x;
         v[i] = x;
     }

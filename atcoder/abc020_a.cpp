@@ -1,11 +1,15 @@
 #include <iostream>
 using namespace std;
-int main(int argc, const char * argv[]) {
+int main(int argc, const char *argv[])
+{
     int q;
     cin >> q;
-    if (q == 1) {
+    if (q == 1)
+    {
         cout << "ABC" << endl;
-    }else{
+    }
+    else
+    {
         cout << "chokudai" << endl;
     }
 }

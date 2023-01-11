@@ -1,27 +1,30 @@
 #include <iostream>
-#include <vector>
-#include <algorithm>
-#include <string>
+
 using namespace std;
 using ll = long long;
 
-int main(int argc, const char * argv[]) {
+int main(int argc, const char *argv[])
+{
     int n, cnt = 0;
     cin >> n;
     ll x;
-    //vector<ll> v(n);
-    for (int i = 0; i< n; i++) {
+    // vector<ll> v(n);
+    for (int i = 0; i < n; i++)
+    {
         cin >> x;
-        //v[i] = x;
-        while (x > 0 && x % 2 == 0) {
-            if (x % 2 == 0) {
+        // v[i] = x;
+        while (x > 0 && x % 2 == 0)
+        {
+            if (x % 2 == 0)
+            {
                 cnt++;
                 x /= 2;
-            }else{
+            }
+            else
+            {
                 break;
             }
         }
     }
     cout << cnt << endl;
-    
 }

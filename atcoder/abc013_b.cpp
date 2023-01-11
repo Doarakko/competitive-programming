@@ -1,18 +1,5 @@
 #include <iostream>
-#include <string>
-#include <vector>
-#include <map>
-#include <set>
-#include <algorithm>
-#include <cmath>
-#include <climits>
-#include <math.h>
 
-#define X first
-#define Y second
-#define vsort(v) sort(v.begin(), v.end())
-#define vrev(v) reverse(v.begin(), v.end())
-#define P pair
 using namespace std;
 int main(int argc, const char *argv[])
 {
