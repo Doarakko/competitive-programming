@@ -31,13 +31,6 @@
 *.out
 *.app
 
-# 
-template/
-move.py
-AtCoder/abc*/
-AtCoder/arc*/
-AtCoder/agc*/
-garbage
 .vscode/
 
 # V
@@ -45,3 +38,4 @@ garbage
 
 # Rust
 main
+target/
