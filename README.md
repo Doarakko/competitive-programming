@@ -1,4 +1,43 @@
-# Competitive programming
+# Competitive Programming
+
+## Usage
+
+### C++
+
+Create file.
+
+```sh
+touch <filename>
+```
+
+Compile.
+
+```sh
+g++ <filename>
+```
+
+Run.
+
+```sh
+./a.out
+```
+
+### Rust
+
+Create a directory for each contest.
+
+```sh
+mkdir <dirname>
+cd <dirname>
+cargo init
+mkdir src/bin
+```
+
+Run.
+
+```sh
+cargo run --bin <filename>
+```
 
 ## References
 
