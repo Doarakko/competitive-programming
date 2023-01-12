@@ -18,13 +18,13 @@ fn main() {
                     k: usize,
                     x: usize,
                 }
-                a[k-1] = x
+                a[k - 1] = x
             }
             2 => {
                 input! {
                     k: usize,
                 }
-                println!("{}", a[k-1])
+                println!("{}", a[k - 1])
             }
             _ => panic!(""),
         }
