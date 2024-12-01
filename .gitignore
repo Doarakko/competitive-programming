@@ -39,3 +39,5 @@
 # Rust
 main
 target/
+
+.idea
